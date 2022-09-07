@@ -4,11 +4,13 @@ module.exports = {
   mode: "production",
   // 入口文件
   entry: {
-    index: "./lib/index.tsx",
+    summerUI: "./lib/index.tsx",
   },
   output: {
     path: path.resolve(__dirname, "dist/lib"),
-    library: "FUI",
+    // 库名
+    library: "summerUI",
+    // umd 通用模块定义
     libraryTarget: "umd",
   },
   module: {
